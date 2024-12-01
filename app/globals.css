@@ -8,8 +8,8 @@ body {
 
 @layer base {
   :root {
-    --color-primary: #323254;
-    --color-primary-hover: #323254;
+    --color-primary: #1B1464;
+    --color-primary-hover: #13104D;
     --color-secondary: #8B6B4D;
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
