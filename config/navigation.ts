@@ -3,24 +3,34 @@ export const navigationMenus = {
     label: "Offerings",
     items: [
       {
-        title: "Go-to-Market Strategy",
-        path: "/offerings/go-to-market-strategy",
-        description: "Develop and execute winning market entry strategies"
+        title: "Go-To-Market Audit",
+        path: "/offerings/go-to-market-audit",
+        description: "Assess your go-to-market strategy and capabilities"
       },
       {
-        title: "Revenue Execution",
-        path: "/offerings/revenue-execution",
-        description: "Optimize your revenue operations and growth"
+        title: "Message Audit",
+        path: "/offerings/message-audit",
+        description: "Assess your messaging and positioning"
       },
       {
-        title: "Messaging & Positioning",
+        title: "Messaging: Devise Strategic Narrative",
         path: "/offerings/messaging-positioning",
         description: "Craft compelling narratives that resonate"
       },
       {
-        title: "Sales Enablement",
-        path: "/offerings/sales-enablement",
-        description: "Empower your sales team with tools and training"
+        title: "TAM: Create and Implement",
+        path: "/offerings/tam",
+        description: "Identify and target your ideal customers"
+      },
+      {
+        title: "Fractional Go-To-Market Leadership",
+        path: "/offerings/go-to-market-leadership",
+        description: "Receive personalized guidance and support"
+      },
+      {
+        title: "Coaching",
+        path: "/offerings/coaching",
+        description: "Receive personalized guidance and support"
       }
     ]
   },
