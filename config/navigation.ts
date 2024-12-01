@@ -31,7 +31,7 @@ export const navigationItems: NavigationItem[] = [
     items: [
       {
         title: "Go-To-Market Audit",
-        path: "/offerings/go-to-market-audit",
+        path: "/offerings/gtm-audit",
         description: "Assess your go-to-market strategy and capabilities"
       },
       {

@@ -18,7 +18,7 @@ export function HeroSection() {
       {/* Text Content */}
       <div className="max-w-[1400px] mx-auto px-6 py-16">
         <h1 className="text-6xl md:text-7xl font-bold text-brand-primary tracking-tight text-center mb-12">
-          FUELING B2B REVENUE ENGINES!
+          FUELING B2B REVENUE ENGINES
         </h1>
         <p className="text-xl md:text-2xl text-gray-800 max-w-[1200px] mx-auto leading-relaxed text-center">
           B2B Tracks emerged from our founders&apos; deep-seated passion for harnessing technology&apos;s socio-economic potential. 

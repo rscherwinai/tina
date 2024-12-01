@@ -1,19 +1,8 @@
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Quote } from "lucide-react"
-import { Testimonial } from "./interfaces/testimonial"
 
-interface TestimonialsSectionProps {
-  testimonials: Testimonial[]
-}
-
-export function TestimonialsSection({ testimonials }: TestimonialsSectionProps) {
-  console.log('Testimonials received:', testimonials);
-  
-  if (!testimonials) {
-    return null;
-  }
-
+export function TestimonialsSection() {
   return (
     <section className="py-24 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -51,4 +40,25 @@ export function TestimonialsSection({ testimonials }: TestimonialsSectionProps) 
     </section>
   )
 }
+
+const testimonials = [
+  {
+    quote: "Russell is a dynamic executive leader, A-Player, mentor, and has my utmost respect. He is a polished, intelligent, knowledgeable, trustworthy, and driven sales and marketing pro. Russell has a solid track-record of success, a mind for strategy and can also get hyper-tactical",
+    name: "Mike Cicollela",
+    role: "VP Business Development",
+    avatar: "/testimonials/avatar-1.jpg"
+  },
+  {
+    quote: "As someone who’s experienced 3 days with Russell …  I came in a skeptic, especially because of the price of Russell.  I came out astonished about how many small things that, maybe, seem trivial to me, when put into a process made total sense and already applied some of them myself talking to customers, and it does work.",
+    name: "",
+    role: "Chief Executive Officer",
+    avatar: "/testimonials/avatar-1.jpg"
+  },
+  {
+    quote: "Russell knows his stuff and acts on it. If you want a no-nonsense guy who cuts through the extraneous stuff and gets the job done, he's the one you want. He and I worked very closely together, and I could count on him to help me think through plans, politely challenge me where needed, and execute once the decisions were made.",
+    name: "Jake Freivald",
+    role: "VP of Product Marketing",
+    avatar: "/testimonials/avatar-2.jpg"
+  }
+]
 
