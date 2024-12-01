@@ -14,6 +14,7 @@ export function CTASection() {
         <Button 
           asChild
           size="lg"
+          variant="default"
           className="bg-white text-brand-primary hover:bg-gray-100"
         >
           <Link href="/schedule">Schedule a Strategic Consultation</Link>
