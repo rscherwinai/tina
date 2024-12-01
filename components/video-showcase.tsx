@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 interface Video {
   title: string
   thumbnailUrl: string
@@ -24,20 +26,23 @@ export default function VideoShowcase({ videos }: VideoShowcaseProps) {
                 rel="noopener noreferrer"
                 className="block relative aspect-video hover:opacity-90 transition-opacity"
               >
-                <img
-                  src={video.thumbnailUrl}
-                  alt={video.title}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
-                    <svg
-                      className="w-8 h-8 text-blue-600"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-                    </svg>
+                <div className="relative aspect-video">
+                  <Image
+                    src={video.thumbnailUrl}
+                    alt={video.title}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
+                      <svg
+                        className="w-8 h-8 text-blue-600"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </a>

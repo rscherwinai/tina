@@ -25,7 +25,7 @@ export function FounderSection() {
             <div className="space-y-4 text-gray-600 text-lg">
               <p>
                 A former CRO and CMO, Russell has a passion for growing innovative businesses. 
-                A high-energy and high-integrity operator, he's grown businesses from $2M-$14M, 
+                A high-energy and high-integrity operator, he&apos;s grown businesses from $2M-$14M, 
                 $45-$77M, and $324-$391M.
               </p>
               
@@ -37,14 +37,14 @@ export function FounderSection() {
               
               <p>
                 A computer scientist by training, Russell learned early on that creating and capturing 
-                value from technology innovation was his passion. Since then, he's led product, sales, 
+                value from technology innovation was his passion. Since then, he&apos;s led product, sales, 
                 marketing, and CS teams.
               </p>
               
               <p>
                 He gets great joy partnering with Force Management and their clients, facilitating 
                 Command of the Message and Command of the Sale transformational programs. In this 
-                capacity, he's helped more than 30 B2B organizations and thousands of GTM leaders 
+                capacity, he&apos;s helped more than 30 B2B organizations and thousands of GTM leaders 
                 and representatives transform their go-to-market execution.
               </p>
             </div>
