@@ -7,7 +7,7 @@ export type MenuItem = {
 export type NavigationItem = {
   label: string
   path?: string
-  type: 'link' | 'dropdown'
+  type: 'link' | 'dropdown' | 'button'
   items?: MenuItem[]
   className?: string
 }
