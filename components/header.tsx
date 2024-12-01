@@ -2,7 +2,29 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu } from "@/components/ui/dropdown-menu"
-import { navigationMenus } from "@/config/navigation"
+import { navigationItems, type NavigationItem } from "@/config/navigation"
+
+const NavigationItemComponent = ({ item }: { item: NavigationItem }) => {
+  if (item.type === "dropdown") {
+    return <DropdownMenu label={item.label} items={item.items || []} />
+  }
+  
+  if (item.type === "button") {
+    return (
+      <Button asChild variant="default" className={item.className}>
+        <Link href={item.path || "/"}>
+          {item.label}
+        </Link>
+      </Button>
+    )
+  }
+
+  return (
+    <Link href={item.path || "/"} className={item.className}>
+      {item.label}
+    </Link>
+  )
+}
 
 export function Header() {
   return (
@@ -21,32 +43,9 @@ export function Header() {
           </Link>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <Link 
-              href="/" 
-              className="text-sm font-medium text-gray-700 hover:text-[#4052B5]"
-            >
-              Home
-            </Link>
-            <Link 
-              href="/keynote-speaking" 
-              className="text-sm font-medium text-gray-700 hover:text-[#4052B5]"
-            >
-              Keynote Speaking
-            </Link>
-            <DropdownMenu {...navigationMenus.offerings} />
-            <Link 
-              href="/thought-leadership" 
-              className="text-sm font-medium text-gray-700 hover:text-[#4052B5]"
-            >
-              Thought Leadership
-            </Link>
-            <Button 
-              asChild 
-              variant="default"
-              className="bg-brand-primary hover:bg-brand-primary-hover text-white"
-            >
-              <Link href="/schedule">Schedule Time With Us</Link>
-            </Button>
+            {navigationItems.map((item) => (
+              <NavigationItemComponent key={item.label} item={item} />
+            ))}
           </nav>
         </div>
       </div>
