@@ -27,17 +27,17 @@ const logos = [
 
 export function LogoGrid() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-12 bg-gray-50">
       <div className="max-w-[1400px] mx-auto px-6">
-        <h2 className="text-2xl font-bold text-brand-primary mb-3">
+        <h2 className="text-2xl font-bold text-brand-primary mb-8">
           Trusted By Industry Leaders
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
           {logos.map((logo) => (
             <Card key={logo.name} className="border-none shadow-none bg-transparent">
               <CardContent className="p-0">
-                <div className="text-center mb-12">
-                  <div className="relative h-12 mx-auto">
+                <div className="text-center mb-4">
+                  <div className="relative h-8 mx-auto">
                     <Image
                       src={logo.src}
                       alt={logo.name}
