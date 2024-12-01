@@ -9,7 +9,7 @@ export function CTASection() {
           Ready to Accelerate Your Growth?
         </h2>
         <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-          Let's discuss how B2B Tracks can help you maximize your revenue potential and drive sustainable growth.
+          Let&apos;s discuss how B2B Tracks can help you maximize your revenue potential and drive sustainable growth.
         </p>
         <Button 
           asChild

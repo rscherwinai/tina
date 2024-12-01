@@ -21,8 +21,8 @@ export function HeroSection() {
           FUELING B2B REVENUE ENGINES!
         </h1>
         <p className="text-xl md:text-2xl text-gray-800 max-w-[1200px] mx-auto leading-relaxed text-center">
-          B2B Tracks emerged from our founders' deep-seated passion for harnessing technology's socio-economic potential. 
-          We apply go-to-market strategy, execution, and messaging expertise to maximize innovation's impact. 
+          B2B Tracks emerged from our founders&apos; deep-seated passion for harnessing technology&apos;s socio-economic potential. 
+          We apply go-to-market strategy, execution, and messaging expertise to maximize innovation&apos;s impact. 
           Our partnerships are exclusively with high-integrity, innovative organizations in the pursuit of monetizing high-impact, high-value offerings.
         </p>
       </div>

@@ -16,7 +16,7 @@ export function TestimonialsSection() {
               <CardContent className="p-8">
                 <Quote className="h-8 w-8 text-brand-primary mb-4" />
                 <p className="text-gray-700 mb-6 text-lg italic">
-                  "{testimonial.quote}"
+                  &ldquo;{testimonial.quote}&rdquo;
                 </p>
                 <div className="flex items-center">
                   <div className="relative h-12 w-12 rounded-full overflow-hidden mr-4">
