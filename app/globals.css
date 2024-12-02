@@ -42,3 +42,8 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+#vercel-feedback-button {
+  display: none !important;
+}
+
