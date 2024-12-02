@@ -9,10 +9,13 @@ const logos = [
   { name: "T2 Biosystems", src: "/logos/t2-biosystems.png", size: "normal" },
   { name: "Chainalysis", src: "/logos/chainalysis.png", size: "normal" },
   { name: "AlertMedia", src: "/logos/alert-media.png", size: "normal" },
+  { name: "Fireblocks", src: "/logos/fireblocks.png", size: "normal" },
+  
   { name: "Capintel", src: "/logos/capintel.png", size: "normal" },
   { name: "Synopsys", src: "/logos/synopsys.png", size: "normal" },
   { name: "nCino", src: "/logos/ncino.png", size: "normal" },
   { name: "UL", src: "/logos/ul.png", size: "large" },
+  { name: "BFG", src: "/logos/blue-force-gear.svg", size: "large" },
   { name: "Vanta", src: "/logos/vanta.png", size: "normal" },
   { name: "Lacework", src: "/logos/lacework.png", size: "normal" },
   { name: "Starburst", src: "/logos/starburst.png", size: "large" },
@@ -21,8 +24,8 @@ const logos = [
   { name: "Aptean", src: "/logos/aptean.png", size: "normal" },
   { name: "ThoughtLogic", src: "/logos/thoughtlogic.png", size: "normal" },
   { name: "Foursquare", src: "/logos/foursquare.png", size: "normal" },
-  { name: "BFG", src: "/logos/blue-force-gear.svg", size: "normal" },
-  { name: "Envista", src: "/logos/envista.png", size: "large" }
+  { name: "Envista", src: "/logos/envista.png", size: "large" },
+  { name: "IBM", src: "/logos/ibm.png", size: "normal" }
 ]
 
 export function LogoGrid() {

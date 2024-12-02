@@ -33,12 +33,12 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <HeroSection />
-      <ServicesSection />
       <LogoGrid />
       <StatsSection />
       <TestimonialsSection testimonials={testimonials} />
       {/* <CalendarWidget /> */}
       <FounderSection />
+      <ServicesSection />
       <CTASection />
     </div>
   )

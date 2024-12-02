@@ -16,7 +16,7 @@ export function HeroSection() {
       </div>
 
       {/* Text Content */}
-      <div className="max-w-[1400px] mx-auto px-6 py-16">
+      <div className="max-w-[1400px] mx-auto px-6 py-3">
         <h1 className="text-6xl md:text-7xl font-bold text-brand-primary tracking-tight text-center mb-12">
           FUELING B2B REVENUE ENGINES
         </h1>
