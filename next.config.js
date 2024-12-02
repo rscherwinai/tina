@@ -4,9 +4,9 @@ const nextConfig = {
   devIndicators: {
     buildActivityPosition: 'bottom-right',
   },
-  feedback: {
+ /* feedback: {
     enabled: false,
-  },
+  },*/
 }
 
 module.exports = nextConfig 

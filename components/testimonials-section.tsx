@@ -8,7 +8,7 @@ interface TestimonialsSectionProps {
 }
 
 export function TestimonialsSection({ testimonials }: TestimonialsSectionProps) {
-  console.log('Testimonials received:', testimonials);
+  // console.log('Testimonials received:', testimonials);
   
   if (!testimonials) {
     return null;
