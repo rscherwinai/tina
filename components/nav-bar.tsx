@@ -58,7 +58,7 @@ export function NavBar() {
           {/* Mobile menu button */}
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2"
+            className="block md:hidden p-2 bg-gray-100 rounded-md"
           >
             <svg 
               className="h-6 w-6 text-gray-700" 
