@@ -74,15 +74,15 @@ export default function GtmAuditPage() {
         <div className="relative z-10 container mx-auto px-4">
           <div className="text-center text-white max-w-4xl mx-auto space-y-4 md:space-y-6">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
-              Messaging Audit
+              Compelling Messaging Workshop
             </h1>
             
             <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
              Start with Why (Simon Sinek Motivated)
             </p>
             <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-             Devise messaging that is relevant, differentiated, defensible, and cross-functionally aligned.
-             And is actionable by sales/CS as conversations. And actionalble by marketing in campaigns.
+             Devise relevant, differentiated, defensible, and cross-functionally aligned messaging.
+             Actionable by sales/CS in buyer conversations. Actionalble by marketing in campaigns.
             </p>
           </div>
         </div>
