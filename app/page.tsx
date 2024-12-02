@@ -6,6 +6,7 @@ import { CTASection } from "@/components/cta-section"
 import { StatsSection } from "@/components/stats-section"
 import { CalendarWidget } from "@/components/calendar-widget"
 import { Testimonial } from "@/components/interfaces/testimonial"
+import { FounderSection } from "@/components/founder-section"
 
 const testimonials: Testimonial[] = [
   {
@@ -37,6 +38,7 @@ export default function Home() {
       <StatsSection />
       <TestimonialsSection testimonials={testimonials} />
       {/* <CalendarWidget /> */}
+      <FounderSection />
       <CTASection />
     </div>
   )
