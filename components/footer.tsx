@@ -1,25 +1,27 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Twitter, Linkedin } from "lucide-react"
+import { Twitter, Linkedin, Mail } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-gray-100 py-16">
+    <footer className="bg-gradient-to-b from-gray-50 to-gray-100 py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <p className="text-gray-600 italic mb-4 text-lg">
-            Some go-to-market engines lack direction. Some run full speed the wrong way.
-          </p>
-          <p className="text-gray-600 italic mb-6 text-lg">
-            Some lack focus. Others lack energy. Some run full speed in the wrong direction.
-          </p>
+          <div className="mb-6">
+            <p className="text-gray-600 italic mb-2 text-lg">
+              Some go-to-market engines lack direction. Some run full speed the wrong way.
+            </p>
+            <p className="text-gray-600 italic text-lg">
+              Some lack focus. Others lack energy. Some run full speed in the wrong direction.
+            </p>
+          </div>
           <p className="text-2xl font-bold text-brand-primary">
             We help you run your revenue engine at full speed, in the right direction.
           </p>
         </div>
 
-        <div className="flex items-center justify-center space-x-12">
-          <Link href="/" className="flex items-center">
+        <div className="flex flex-col md:flex-row items-center justify-between max-w-4xl mx-auto">
+          <Link href="/" className="flex items-center mb-6 md:mb-0">
             <Image
               src="/logo.png"
               alt="B2B Tracks"
@@ -31,22 +33,35 @@ export function Footer() {
 
           <div className="flex items-center space-x-6">
             <a 
-              href="https://linkedin.com/company/b2b-tracks" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-brand-secondary hover:bg-brand-primary p-3 rounded-full transition-colors"
+              href="mailto:russell@b2btracks.com"
+              className="bg-brand-primary/10 hover:bg-brand-primary p-3 rounded-full transition-all duration-300 group"
+              title="Email us"
             >
-              <Linkedin className="h-5 w-5 text-white" />
+              <Mail className="h-5 w-5 text-brand-primary group-hover:text-white" />
             </a>
             <a 
-              href="https://twitter.com/b2btracks" 
+              href="https://linkedin.com/in/rscherwin"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-brand-secondary hover:bg-brand-primary p-3 rounded-full transition-colors"
+              className="bg-[#0077b5]/10 hover:bg-[#0077b5] p-3 rounded-full transition-all duration-300 group"
+              title="Follow us on LinkedIn"
             >
-              <Twitter className="h-5 w-5 text-white" />
+              <Linkedin className="h-5 w-5 text-[#0077b5] group-hover:text-white" />
+            </a>
+            <a 
+              href="https://twitter.com/rscherwin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-black/10 hover:bg-black p-3 rounded-full transition-all duration-300 group"
+              title="Follow us on X (Twitter)"
+            >
+              <Twitter className="h-5 w-5 text-black group-hover:text-white" />
             </a>
           </div>
+        </div>
+        
+        <div className="text-center mt-8 text-sm text-gray-500">
+          © {new Date().getFullYear()} B2B Tracks. All rights reserved.
         </div>
       </div>
     </footer>
