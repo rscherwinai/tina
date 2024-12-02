@@ -77,7 +77,7 @@ export default function GtmAuditPage() {
             Total Addressable Market
             </h1>
             <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-            Execute your Strategy.  Create it for straetgy and investors.  Integrate it into sales and marketing execution 
+            Integrate the strategy you communicate to investors with revenue execution.
             </p>
           </div>
         </div>

@@ -32,17 +32,17 @@ export const navigationItems: NavigationItem[] = [
       {
         title: "Go-To-Market Audit",
         path: "/offerings/gtm-audit",
-        description: "Assess your go-to-market strategy and capabilities"
+        description: "Actionable insights on your go-to-market strategy and execution"
       },
       {
         title: "Message Audit",
         path: "/offerings/message-audit",
-        description: "Assess your messaging and positioning"
+        description: "Assess your messaging and positioning's effectiveness"
       },
       {
         title: "Messaging: Devise Strategic Narrative",
         path: "/offerings/messaging-positioning",
-        description: "Craft compelling narratives that resonate"
+        description: "Craft a compelling message that is relevant, differentiated, and defensible"
       },
       {
         title: "TAM: Create and Implement",
@@ -50,14 +50,14 @@ export const navigationItems: NavigationItem[] = [
         description: "Identify and target your ideal customers"
       },
       {
-        title: "Fractional Go-To-Market Leadership",
+        title: "Fractional Leadership",
         path: "/offerings/go-to-market-leadership",
-        description: "Receive personalized guidance and support"
+        description: "I need to REALLY love your product-market.  Or you."
       },
       {
-        title: "Coaching",
+        title: "Go-To-Market Coaching",
         path: "/offerings/coaching",
-        description: "Receive personalized guidance and support"
+        description: "Personalized guidance.  For leaders and individual contributors."
       }
     ]
   },
