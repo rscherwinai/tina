@@ -6,6 +6,7 @@ import { CTASection } from "@/components/cta-section"
 import { StatsSection } from "@/components/stats-section"
 import { CalendarWidget } from "@/components/calendar-widget"
 import { Testimonial } from "@/components/interfaces/testimonial"
+import Image from "next/image"
 
 const testimonials: Testimonial[] = [
   {
@@ -28,17 +29,37 @@ const testimonials: Testimonial[] = [
   }
 ]
 
-export default function Home() {
+export default function SchedulePage() {
   return (
-    <div className="flex flex-col">
-      <HeroSection />
-      <ServicesSection />
-      <LogoGrid />
-      <StatsSection />
-      <TestimonialsSection testimonials={testimonials} />
-      {/* <CalendarWidget /> */}
-      <CTASection />
-    </div>
+    <main className="min-h-screen py-16">
+      {/* Hero Section */}
+      <section className="relative min-h-[200px] md:min-h-[250px] bg-brand-primary flex items-center justify-center pt-16 md:pt-20">
+        <div className="absolute inset-0 bg-black/30" />
+        <div className="relative z-10 container mx-auto px-4">
+          <div className="text-center text-white max-w-4xl mx-auto space-y-4 md:space-y-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
+            Let's Chat
+            </h1>
+            
+            <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+            Schedule time to get to know each other
+            </p>
+            
+          </div>
+        </div>
+      </section>
+      
+      {/* Calendar Section */}
+      <section className="max-w-7xl mx-auto px-4 py-12">
+        <div className="relative overflow-hidden pt-[56.25%] rounded-lg shadow-lg">
+          <iframe 
+            src="https://calendarbridge.com/book/rscherwin/"
+            className="absolute top-0 left-0 w-full h-full border-0"
+            allow="camera; microphone; fullscreen; display-capture"
+          />
+        </div>
+      </section>
+    </main>
   )
 }
 
