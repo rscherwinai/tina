@@ -18,7 +18,7 @@ const testimonials: Testimonial[] = [
   },
   {
     quote: "As someone who's experienced 3 days with Russell …  I came in a skeptic, especially because of the price of Russell.  I came out astonished about how many small things that, maybe, seem trivial to me, when put into a process made total sense.",
-    name: "",
+    name: "To Do: Reach out",
     role: "Chief Executive Officer",
     avatar: "/testimonials/yuval-r.jpg"
   },
