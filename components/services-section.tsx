@@ -3,9 +3,9 @@ import Link from "next/link"
 
 export function ServicesSection() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-gray-50 pb-6 pt-6">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-brand-primary mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-brand-primary pb-8 pt-8">
           Go-to-Market Strategy, Execution, Messaging
         </h2>
         

@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export function HeroSection() {
   return (
-    <section className="flex flex-col mt-10 pb-8 bg-blue-100">
+    <section className="flex flex-col mt-10 pb-8 bg-gray-100">
       {/* Hero Image Container */}
       <div className="relative h-[30vh] w-full">
         <Image

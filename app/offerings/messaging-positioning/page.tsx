@@ -1,122 +1,96 @@
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
+import { WhyChooseSection } from "@/components/why-choose-section"
 
-const methodologyPillars = [
+const messagingSteps = [
   {
-    title: "Means",
-    description: "Offering Readiness for Value Creation and Capture?",
-    items: [
-      "Offering Overview (current & planned)",
-      "Investment Framework",
-      "Referenceable customer stories",
-      "Distribution channels",
-      "GTM Organization structure"
-    ]
+    step: "1",
+    title: "Market Opportunity",
+    description: "Business and Market Review to identify opportunities and strategies for differentiation."
   },
   {
-    title: "Market",
-    description: "Resources Focused on Winnable Pursuits at Scale?",
-    items: [
-      "TAM/SAM with Segmentation & Prioritization",
-      "Market Position analysis",
-      "Opportunity scoring framework",
-      "Product-market fit assessment"
-    ]
+    step: "2",
+    title: "Buying Audiences",
+    description: "Identifying prioritized segments and audiences, and their drivers."
   },
   {
-    title: "Math",
-    description: "Do the Numbers Add Up?",
-    items: [
-      "Market Size by segment",
-      "Conversion metrics and timelines",
-      "Average Deal Sizes",
-      "Scalable cost modeling"
-    ]
+    step: "3",
+    title: "Differentiated Value",
+    description: "Define offering capabilities and how they attach to the targeted audience’s drivers."
   },
   {
-    title: "Message",
-    description: "Relevant? Differentiated? Defensible? Aligned?",
-    items: [
-      "Relevant to targeted segments?",
-      "Differentiated from competing alternatives",
-      "Defensible for new reps?",
-      "Aligned cross-functionally?"
-    ]
+    step: "4",
+    title: "Start with Why",
+    description: "Inspired by Simon Sinek, get to the heart of your DNA and communicate it for impact."
   },
   {
-    title: "Medium",
-    description: "Enabled to Monetize the Message Effectively?",
-    items: [
-      "Enablement content and tools",
-      "Brand building effectiveness",
-      "Pipeline progression and channels",
-      "Customer success operations"
-    ]
+    step: "5",
+    title: "Strategic Narrative",
+    description: "Tell a winning story.  For you and your buyers. To be told by marketing in one-way conversations and the field in two-way conversations."
   },
   {
-    title: "Management",
-    description: "Can we Execute with Discipline?",
-    items: [
-      "GTM Performance metrics",
-      "Goals and compensation alignment",
-      "Operating rhythm",
-      "Technology stack optimization"
-    ]
+    step: "6",
+    title: "Field Activation",
+    description: "Activate messaging to drive the needed outcomes. For you and your buyers."
   }
 ]
 
-export default function GtmAuditPage() {
+export default function MessagingPositioningPage() {
   return (
     <main className="min-h-screen">
-      {/* Hero Section - reduced height */}
+      {/* Hero Section */}
       <section className="relative min-h-[400px] md:min-h-[350px] bg-brand-primary flex items-center justify-center pt-16 md:pt-20">
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 container mx-auto px-4">
           <div className="text-center text-white max-w-4xl mx-auto space-y-4 md:space-y-6">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
-              Compelling Messaging
+              Messaging and Positioning
             </h1>
-            
-            <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-             Start with Why (Simon Sinek Motivated)
-            </p>
-            <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-             Devise messaging that is actionable by sales/CS in buyer conversations and by marketing in campaigns.
+            <p className="text-lg sm:text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
+            Create messaging that is relevant to your audience, differentiated from the competition, defensible by market-facing representatives, and aligned cross-functionally.
             </p>
           </div>
         </div>
       </section>
 
-      {/* 6M Methodology Grid */}
-      <section className="py-16">
+      {/* Messaging Process */}
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-brand-primary mb-12">
-            Powered by the 6M GTM Methodology
+            The Compelling Messaging Workshop Process
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {methodologyPillars.map((pillar, index) => (
-              <Card key={index} className="bg-white">
-                <CardContent className="p-6">
-                  <h3 className="text-2xl font-bold text-brand-primary mb-3">
-                    {pillar.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4">
-                    {pillar.description}
-                  </p>
-                  <ul className="space-y-2">
-                    {pillar.items.map((item, idx) => (
-                      <li key={idx} className="flex items-start">
-                        <span className="text-brand-primary mr-2">•</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
+          <div className="grid md:grid-cols-3 gap-8">
+            {messagingSteps.map((step, index) => (
+              <div key={index} className="text-center bg-white shadow-md rounded-lg p-6">
+                <h3 className="text-2xl font-bold text-brand-primary mb-4">
+                  {step.step} - {step.title}
+                </h3>
+                <p className="text-gray-600">{step.description}</p>
+              </div>
             ))}
           </div>
         </div>
       </section>
+
+      {/* Deliverables Section */}
+      {/* <section className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-brand-primary mb-12">
+            Deliverables
+          </h2>
+          <ul className="list-disc list-inside text-gray-700 max-w-3xl mx-auto space-y-4">
+            <li>Create a compelling message that is relevant, differentiated, and defensible.</li>
+            <li>Align messaging across sales, marketing, and product management teams.</li>
+            <li>Develop a strategic narrative that drives customer engagement and trust.</li>
+            <li>Deliver actionable messaging frameworks for campaigns and buyer conversations.</li>
+          </ul>
+        </div>
+      </section> */}
+
+      {/* Why Choose Us */}
+    
+      <WhyChooseSection />
     </main>
   )
-} 
+  
+}

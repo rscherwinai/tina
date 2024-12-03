@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export function FounderSection() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-white pt-6">
       <div className="container mx-auto px-4">
         <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 items-start">
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">

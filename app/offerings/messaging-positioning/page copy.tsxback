@@ -1,11 +1,10 @@
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
-import { WhyChooseSection } from "@/components/why-choose-section"
 
 const methodologyPillars = [
   {
     title: "Means",
-    description: "Asset Readiness for Value Creation?",
+    description: "Offering Readiness for Value Creation and Capture?",
     items: [
       "Offering Overview (current & planned)",
       "Investment Framework",
@@ -16,7 +15,7 @@ const methodologyPillars = [
   },
   {
     title: "Market",
-    description: "Resources Focused on Winnable Pursuits?",
+    description: "Resources Focused on Winnable Pursuits at Scale?",
     items: [
       "TAM/SAM with Segmentation & Prioritization",
       "Market Position analysis",
@@ -31,24 +30,22 @@ const methodologyPillars = [
       "Market Size by segment",
       "Conversion metrics and timelines",
       "Average Deal Sizes",
-      "Scalable cost modeling",
-      "Pricing's alignment with value proposition"
+      "Scalable cost modeling"
     ]
   },
   {
     title: "Message",
-    description: "Relevant, Differentiated, Defensible, Aligned?",
+    description: "Relevant? Differentiated? Defensible? Aligned?",
     items: [
       "Relevant to targeted segments?",
-      "Differentiated from competing alternatives?",
+      "Differentiated from competing alternatives",
       "Defensible for new reps?",
-      "Aligned cross-functionally?",
-      "Actionable by your GTM mediums?"
+      "Aligned cross-functionally?"
     ]
   },
   {
     title: "Medium",
-    description: "Enabled to Monetize the Message?",
+    description: "Enabled to Monetize the Message Effectively?",
     items: [
       "Enablement content and tools",
       "Brand building effectiveness",
@@ -58,7 +55,7 @@ const methodologyPillars = [
   },
   {
     title: "Management",
-    description: "Are we Executing with Discipline?  If not, can we?",
+    description: "Can we Execute with Discipline?",
     items: [
       "GTM Performance metrics",
       "Goals and compensation alignment",
@@ -71,28 +68,30 @@ const methodologyPillars = [
 export default function GtmAuditPage() {
   return (
     <main className="min-h-screen">
-      {/* Hero Section */}
+      {/* Hero Section - reduced height */}
       <section className="relative min-h-[400px] md:min-h-[350px] bg-brand-primary flex items-center justify-center pt-16 md:pt-20">
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 container mx-auto px-4">
           <div className="text-center text-white max-w-4xl mx-auto space-y-4 md:space-y-6">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
-              Go-To-Market Audit
+              Compelling Messaging
             </h1>
+            
             <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-            Understand which initiatives to stop, keep, start, and modify. Identify your biggest needle movers and gain a blueprint for transformative action.
+             Start with Why (Simon Sinek Motivated)
+            </p>
+            <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+             Devise messaging that is actionable by sales/CS in buyer conversations and by marketing in campaigns.
             </p>
           </div>
         </div>
       </section>
 
-      <WhyChooseSection />
-
       {/* 6M Methodology Grid */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-brand-primary mb-12">
-            Audit Powered by our Properietary 6M GTM Methodology
+            Powered by the 6M GTM Methodology
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {methodologyPillars.map((pillar, index) => (
@@ -118,10 +117,6 @@ export default function GtmAuditPage() {
           </div>
         </div>
       </section>
-      
-        
-      
-      
     </main>
   )
-}
+} 

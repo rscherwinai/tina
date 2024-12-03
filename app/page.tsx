@@ -7,6 +7,7 @@ import { StatsSection } from "@/components/stats-section"
 import { CalendarWidget } from "@/components/calendar-widget"
 import { Testimonial } from "@/components/interfaces/testimonial"
 import { FounderSection } from "@/components/founder-section"
+import { WhyChooseSection } from "@/components/why-choose-section"
 
 const testimonials: Testimonial[] = [
   {
@@ -40,6 +41,7 @@ export default function Home() {
       <FounderSection />
       <ServicesSection />
       <CTASection />
+      <WhyChooseSection />
     </div>
   )
 }
