@@ -65,51 +65,91 @@ const methodologyPillars = [
   }
 ]
 
-export default function GtmAuditPage() {
+export default function CoachingPage() {
   return (
     <main className="min-h-screen">
-      {/* Hero Section - reduced height */}
-      <section className="relative min-h-[400px] md:min-h-[350px] bg-brand-primary flex items-center justify-center pt-16 md:pt-20">
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="relative z-10 container mx-auto px-4">
-          <div className="text-center text-white max-w-4xl mx-auto space-y-4 md:space-y-6">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
-              Leadership and Sales Coaching
-            </h1>
-            
-            
-            
-          </div>
-        </div>
-      </section>
+      {/* Hero Section */}
+      
+      <section className="relative min-h-[300px] bg-brand-primary flex items-center justify-center py-12 pb-0">
+  {/* Gradient Background */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20" />
+  
+  {/* Content */}
+  <div className="relative z-10 container mx-auto px-4 text-center text-white">
+    <div className="max-w-6xl mx-auto">
+      {/* Heading */}
+      <h1 className="text-4xl md:text-5xl font-bold leading-none">
+        Leadership and Sales Coaching
+      </h1>
+      {/* Subheading */}
+      <p className="text-xl md:text-2xl mt-4">
+        Take your game to the next level with personalized guidance and support
+      </p>
+    </div>
+  </div>
+</section>
 
-      {/* 6M Methodology Grid */}
-      <section className="py-16">
+
+
+
+      {/* Main Content */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-brand-primary mb-12">
-            Powered by the 6M GTM Methodology
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {methodologyPillars.map((pillar, index) => (
-              <Card key={index} className="bg-white">
-                <CardContent className="p-6">
-                  <h3 className="text-2xl font-bold text-brand-primary mb-3">
-                    {pillar.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4">
-                    {pillar.description}
-                  </p>
-                  <ul className="space-y-2">
-                    {pillar.items.map((item, idx) => (
-                      <li key={idx} className="flex items-start">
-                        <span className="text-brand-primary mr-2">•</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="grid md:grid-cols-2 gap-12 max-w-7xl mx-auto items-center">
+            {/* Left Column - Text Content */}
+            <div className="space-y-8">
+              <div className=" transition-all duration-300">
+                <h2 className="text-3xl font-bold text-brand-primary mb-4">
+                  Let's Connect and Grow Together
+                </h2>
+                <p className="text-lg text-gray-700">
+                 
+                </p>
+              </div>
+              <div >
+                <h3 className="text-xl font-semibold text-brand-primary mb-3">
+                  Who This Is For
+                </h3>
+                <p className="text-lg text-gray-700">
+                  Individuals hungry to grow, and who relentlessly balance ego and humility.  
+                </p>
+              </div>
+
+              <div className="bg-gray-50 p-8 rounded-xl transform hover:scale-105 transition-all duration-300">
+                <p className="text-lg text-gray-700 italic">
+                  "Humility is growth's secret. I believe my impact on others is how my life will be measured."
+                </p>
+              </div>
+
+              
+              <div>
+                <h3 className="text-xl font-semibold text-brand-primary mb-3">
+                Investment
+                </h3>
+                <p className="text-lg text-gray-700">
+                Coaching rates will depend upon your goals, my energy required, and how much I believe I'll learn from teaming.
+                </p>
+              </div>
+
+
+
+              
+            </div>
+
+            {/* Right Column - Image */}
+            <div className="relative h-[400px] transform hover:scale-105 transition-all duration-300">
+              <div className="rounded-2xl overflow-hidden h-full w-full shadow-xl">
+                <Image
+                  src="/humble.jpg"
+                  
+                  alt="Humble - colorful letters on canvas"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
