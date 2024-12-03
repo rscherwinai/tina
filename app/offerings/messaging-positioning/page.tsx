@@ -26,12 +26,12 @@ const messagingSteps = [
   {
     step: "5",
     title: "Strategic Narrative",
-    description: "Tell a winning story.  For you and your buyers. To be told by marketing in one-way conversations and the field in two-way conversations."
+    description: "Tell a winning story.  For marketing to drive campaigns and the field to engage buyers."
   },
   {
     step: "6",
     title: "Field Activation",
-    description: "Activate messaging to drive the needed outcomes. For you and your buyers."
+    description: "Activate messaging to drive needed outcomes. For you and your buyers."
   }
 ]
 
@@ -44,7 +44,7 @@ export default function MessagingPositioningPage() {
         <div className="relative z-10 container mx-auto px-4">
           <div className="text-center text-white max-w-4xl mx-auto space-y-4 md:space-y-6">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
-              Messaging and Positioning
+              Compelling Messaging
             </h1>
             <p className="text-lg sm:text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
             Create messaging that is relevant to your audience, differentiated from the competition, defensible by market-facing representatives, and aligned cross-functionally.
