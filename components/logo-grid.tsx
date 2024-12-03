@@ -37,7 +37,7 @@ export function LogoGrid() {
         <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-8 gap-4">
           {logos.map((logo) => (
             <div key={logo.name} className="flex items-center justify-center p-3">
-              <div className={`relative ${logo.size === 'xl' ? 'w-[400px]' : 'large' ? 'w-[160px]' : logo.size === 'small' ? 'w-[70px]' : 'w-[100px]'} h-10`}>
+              <div className={`relative ${logo.size === 'xl' ? 'w-[400px]' : logo.size === 'large' ? 'w-[160px]' : logo.size === 'small' ? 'w-[70px]' : 'w-[100px]'} h-10`}>
                 <Image
                   src={logo.src}
                   alt={logo.name}
