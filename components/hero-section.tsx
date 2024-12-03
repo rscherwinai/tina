@@ -24,9 +24,13 @@ export function HeroSection() {
         <h2 className="text-2xl md:text-3xl text-center text-brand-primary mb-8 italic max-w-[1200px] mx-auto">
           Partnering exclusively with high-integrity, innovative organizations
         </h2>
-        <p className="text-xl md:text-2xl text-gray-800 max-w-[900px] mx-auto leading-relaxed text-center">
+        {/* <p className="text-xl md:text-2xl text-gray-800 max-w-[900px] mx-auto leading-relaxed text-center">
           B2B Tracks emerged from our founders&apos; passion for harnessing technology&apos;s socio-economic potential. 
           We apply go-to-market strategy, execution, and messaging expertise to maximize innovation&apos;s impact. 
+        </p> */}
+        <p className="text-xl md:text-2xl text-gray-800 max-w-[900px] mx-auto leading-relaxed text-center">
+        B2B Tracks is built on curiosity and a passion for harnessing technology's potential. 
+        We monetize that potential by applying go-to-market strategy, execution, and messaging leadership.
         </p>
       </div>
     </section>

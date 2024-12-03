@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 const logos = [
-    { name: "Monday.com", src: "/logos/monday.png", size: "large" },
+    { name: "Monday.com", src: "/logos/monday.png", size: "xl" },
     { name: "Digital Asset", src: "/logos/digital-asset.png", size: "large" },
   { name: "Figma", src: "/logos/figma.png", size: "small" },
   { name: "Gainsight", src: "/logos/gainsight.png", size: "normal" },
@@ -10,11 +10,10 @@ const logos = [
   { name: "Chainalysis", src: "/logos/chainalysis.png", size: "normal" },
   { name: "AlertMedia", src: "/logos/alert-media.png", size: "normal" },
   { name: "Fireblocks", src: "/logos/fireblocks.png", size: "normal" },
-  
   { name: "Capintel", src: "/logos/capintel.png", size: "normal" },
   { name: "Synopsys", src: "/logos/synopsys.png", size: "normal" },
   { name: "nCino", src: "/logos/ncino.png", size: "normal" },
-  { name: "UL", src: "/logos/ul.png", size: "normal" },
+  { name: "UL", src: "/logos/ul.png", size: "small" },
   { name: "BFG", src: "/logos/blue-force-gear.svg", size: "large" },
   { name: "Vanta", src: "/logos/vanta.png", size: "small" },
   { name: "Lacework", src: "/logos/lacework.png", size: "normal" },
@@ -38,7 +37,7 @@ export function LogoGrid() {
         <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-8 gap-4">
           {logos.map((logo) => (
             <div key={logo.name} className="flex items-center justify-center p-3">
-              <div className={`relative ${logo.size === 'large' ? 'w-[160px]' : logo.size === 'small' ? 'w-[70px]' : 'w-[100px]'} h-10`}>
+              <div className={`relative ${logo.size === 'xl' ? 'w-[400px]' : 'large' ? 'w-[160px]' : logo.size === 'small' ? 'w-[70px]' : 'w-[100px]'} h-10`}>
                 <Image
                   src={logo.src}
                   alt={logo.name}
