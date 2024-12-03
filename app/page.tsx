@@ -41,7 +41,7 @@ export default function Home() {
       <FounderSection />
       <ServicesSection />
       <CTASection />
-      <WhyChooseSection />
+      <WhyChooseSection backgroundColor="bg-gray-100" titleColor="text-brand-primary" textColor="text-brand-primary" />
     </div>
   )
 }
